@@ -39,7 +39,6 @@
   "value_end": 12
 }
 ```
-![image](https://media.oss.navercorp.com/user/16388/files/25050080-be09-11eb-8356-77f745f35b2d)
 
 
   - field 상세 설명
@@ -58,7 +57,6 @@
 
 ## Baseline
  - Baseline 코드의 모델 구조는 [Scaling up Open Tagging from Tens to Thousands: Comprehension Empowered Attribute Value Extraction from Product Title](https://www.aclweb.org/anthology/P19-1514/) 에서 소개된 구조로 구현하였습니다
-![image](https://media.oss.navercorp.com/user/16388/files/e2316880-f837-11ea-9ffd-442e9eadf237)
  - Pretrained model은 [Clova larva](https://oss.navercorp.com/Conversation/LaRva) 에서 제공하는 `larva-jpn-plus-base-cased`을 사용하였으며 bert 모델이므로 적절하게 변경하여 성능을 올려주시면 될 것 같습니다
 
 ## 학습 및 평가 방법
@@ -70,9 +68,3 @@ nsml run -d airush2021-2-6 -e train.py -a "--batch-size 100" --gpu-model V100
 ```
 nsml submit -t {NSML 계정}/airush2021-2-6/{Session Number} {Checkpoint name}
 ```
-
-## 기타
-
- - Contact
-    - 주윤상 : yunsang.ju@navercorp.com
- - [Team blog](https://medium.com/naver-place-dev)
